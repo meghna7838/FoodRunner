@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FoodRunner</string>
+    <string name="havent_registered_yet"><u>Havent registered yet?</u></string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+</resources>
