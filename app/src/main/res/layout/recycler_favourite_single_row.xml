@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:weightSum="6"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+        <ImageView
+            android:id="@+id/imgBookImage"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.5"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.3">
+
+            <TextView
+                android:id="@+id/txtRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Name of the Restraunt"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtRestaurantName"
+                android:layout_alignParentBottom="true"
+                android:padding="8dp"
+                android:text=" ₹ 299/person"
+                android:textColor="#357a38"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <TextView
+                android:id="@+id/txtFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:drawableEnd="@drawable/ic_favourites"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                android:text="    "
+                android:textColor="#ffca28"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFavourite"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                android:text="     4.5"
+                android:textColor="#ffca28"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

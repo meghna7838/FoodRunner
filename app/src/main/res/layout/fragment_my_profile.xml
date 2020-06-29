@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_base"
+    tools:context="fragment.MyProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/header2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:background="#ffff"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtMobile"
+        android:background="#ffff"
+        android:layout_below="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91-1234567890"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:background="#ffff"
+        android:layout_below="@+id/txtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:background="#ffff"
+        android:layout_below="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Address"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

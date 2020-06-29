@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/logo_color"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -85,7 +85,7 @@
         android:layout_marginBottom="30dp"
         android:padding="6dp"
         android:textColor="#ffff"
-        android:text="@string/havent_registered_yet"
+        android:text="@string/registration"
         android:textSize="16sp" />
 
 

@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#ff5139</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="logo_color">#ff5139</color>
+    <color name="color_base">#ff5139</color>
 </resources>

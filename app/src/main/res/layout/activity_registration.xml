@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/logo_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="firstStrong"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Register Yourself"
+        app:titleTextColor="#ffff" />
+
+    <EditText
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtName"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name(Min. 3 characters)"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_name"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtEmail"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtMobile"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number(10 Digits)"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:textSize="20sp"
+        android:inputType="phone"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtAddress"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Delivery Address"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:maxLines="2"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtPassword"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password(Min. 4 characters)"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/txtConfirmPassword"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="#C30000"
+        android:padding="6dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
