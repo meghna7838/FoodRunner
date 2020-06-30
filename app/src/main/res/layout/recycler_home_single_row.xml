@@ -18,7 +18,7 @@
 
 
         <ImageView
-            android:id="@+id/imgBookImage"
+            android:id="@+id/imgRestaurantImage"
             android:layout_width="0dp"
             android:layout_height="110dp"
             android:layout_weight="1.5"
@@ -36,10 +36,10 @@
                 android:id="@+id/txtRestaurantName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="4dp"
                 android:text="Name of the Restraunt"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
 
 
             <TextView
@@ -48,10 +48,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtRestaurantName"
                 android:layout_alignParentBottom="true"
-                android:padding="8dp"
+                android:padding="4dp"
                 android:text=" ₹ 299/person"
-                android:textColor="#357a38"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_marginTop="30dp"/>
         </RelativeLayout>
@@ -66,8 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
-                android:drawableEnd="@drawable/ic_favourites"
+                android:drawableEnd="@drawable/ic_favred1"
                 android:drawablePadding="4dp"
                 android:padding="4dp"
                 android:text="    "
@@ -83,9 +81,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtFavourite"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
                 android:drawablePadding="4dp"
                 android:padding="4dp"
-                android:text="     4.5"
+                android:text="4.5"
                 android:textColor="#ffca28"
                 android:textSize="20sp"
                 android:textStyle="bold">

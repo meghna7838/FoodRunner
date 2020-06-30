@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import fragment.HomeFragment
 import meghna.lottey.foodrunner.R
 
 class RegistrationActivity : AppCompatActivity() {
@@ -37,12 +38,18 @@ class RegistrationActivity : AppCompatActivity() {
                 startActivity(intent)
         }
         btnRegistration.setOnClickListener {
-            val intent = Intent(this@RegistrationActivity,RegistrationDisplayActivity::class.java)
-            intent.putExtra("name",txtName.text.toString())
-            intent.putExtra("email",txtEmail.text.toString())
-            intent.putExtra("mobile",txtMobile.text.toString())
-            intent.putExtra("address",txtAddress.text.toString())
-            startActivity(intent)
+            val fragment= HomeFragment()
+//            val transaction = supportFragmentManager.beginTransaction()
+//                transaction.replace(
+//                    R.id.frame,
+//                    fragment
+//                ).commit()
+//            val intent = Intent(this@RegistrationActivity,RegistrationDisplayActivity::class.java)
+//            intent.putExtra("name",txtName.text.toString())
+//            intent.putExtra("email",txtEmail.text.toString())
+//            intent.putExtra("mobile",txtMobile.text.toString())
+//            intent.putExtra("address",txtAddress.text.toString())
+//            startActivity(intent)
         }
         }
 

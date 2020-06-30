@@ -28,17 +28,18 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        title = "Log In"
 
         sharedPreferences =
-            getSharedPreferences("Login Preferences",Context.MODE_PRIVATE)
+            getSharedPreferences("Restraunt preferences",Context.MODE_PRIVATE)
 
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn",false)
 
         if(isLoggedIn){
-            val intent = Intent(this@LoginActivity,LoginDisplayActivity::class.java)
+         val intent = Intent(this@LoginActivity,MainActivity::class.java)
             startActivity(intent)
            finish()
-        }
+  }
 
         title = "Log in"
 
@@ -49,12 +50,15 @@ class LoginActivity : AppCompatActivity() {
         txtRegister = findViewById(R.id.txtRegister)
 
         btnLogin.setOnClickListener {
+            val mobileNumber = etMobileNumber.text.toString()
+            val password = etPassword.text.toString()
+
             if(validMobileNumber ==etMobileNumber.text.toString() && validPassword == etPassword.text.toString()) {
-                    val intent = Intent(this@LoginActivity, LoginDisplayActivity::class.java)
+                  val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     intent.putExtra("mobile", etMobileNumber.text.toString())
                     startActivity(intent)
-                    var mobile =etMobileNumber.text.toString()
-                    savePreferences(mobile)
+                   var mobile =etMobileNumber.text.toString()
+                   savePreferences(mobile)
                 }
 
             else
